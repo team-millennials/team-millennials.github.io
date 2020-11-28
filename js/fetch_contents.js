@@ -51,9 +51,12 @@ function display_contents(chk,contents){
         html += "<br/><hr/><br/>";
     }
     html += "</div>";
+     nav_html = nav_html + '<li class="nav-item">\
+            <a class="nav-link js-scroll-trigger" href="#ProjectLive">Our MVP!!</a>\
+        </li>';
     nav_html = nav_html + '<li class="nav-item">\
             <a class="nav-link js-scroll-trigger" href="#author">Team Members</a>\
-        </li>'
+        </li>';
     document.getElementById("main").innerHTML = html;
     document.getElementById("navcontents").innerHTML = nav_html;
     smooth_scrolling();
